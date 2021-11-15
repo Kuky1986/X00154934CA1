@@ -4,4 +4,5 @@ from django.db import models
 
 class CustomUser(AbstractUser):
     age = models.PositiveIntegerField(null=True, blank=True)
+    car = models.CharField(max_length=200, blank=True)
 
