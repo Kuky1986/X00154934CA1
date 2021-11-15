@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #local
     'accounts',
     'pages',
+    'articles',
     #3rd party
     'crispy_forms',
     'crispy_bootstrap5'
@@ -133,5 +134,8 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
