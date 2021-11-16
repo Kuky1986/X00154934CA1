@@ -3,10 +3,11 @@
 {% block title %}Home{% endblock title %}
 {% block content %}
     <br/>
-    <div class="container-fluid text-sm-center p-5 bg-info text-white "> 
+    <div class="container-fluid text-sm-center p-5 bg-secondary text-white "> 
         <h1 class="display-2">Welcom to CarBlog</h1>
         <p class="lead">A CarBlog website is a place for all car enthusiast.</p>
         <p>If you don’t look back at your car after you park it, you own the wrong car.</p>
-        <p><a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"role="button" >View all articles</a></p>
+        <p><a class="btn btn-dark btn-lg" href="{% url 'article_list' %}"role="button" >View all articles</a></p>
     </div>
+    <img class="big-image" src="{% static '/images/home.jpg' %}" alt="home">
 {% endblock content %}
